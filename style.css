@@ -1,0 +1,125 @@
+/* Utilities */
+@import url('https://fonts.googleapis.com/css2?family=Alkatra&family=Poppins&display=swap');
+
+/* Body Styles */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(230, 231, 235);
+}
+
+/* Container Styles */
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container {
+    border: 1px solid red;
+    width: 75%;
+    height: 550px;
+    display: grid;
+    grid-template-columns: 37% 63%;
+}
+
+
+/* Left Side Styles */
+
+.left {
+    background-color: #ee4444;
+    position: relative;
+}
+.left>div:nth-of-type(1) {
+    margin-top: 52px;
+}
+.left-div-2 {
+    padding: 20px;
+    color: white;
+}
+.left-div-2 div {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+}
+.left-div-2 div span {
+    font-size: 1.7rem !important;
+    border: 2px solid white;
+    border-radius: 50%;
+    padding: 5px;
+    margin-right: 13px;
+}
+.left-div-2 div p{
+    font-size: .9rem;
+    font-weight: lighter;
+    font-style: italic;
+}
+
+
+/* Right Side Styles */
+.right {
+    background-color: #fff;
+    padding: 10px 20px;
+}
+
+/* form styles */
+form {
+    padding: 0 30px;
+}
+form div {
+    margin-top: 20px;
+}
+form input:not([type = "checkbox"], [type= "submit"]) {
+    border: none;
+    border-bottom: 2px solid rgb(231, 224, 224);
+    outline: none;
+    font-size: 1.1rem;
+    width: 100%;
+    margin-top: 4px;
+    transition: all .4s;
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+form input:focus {
+    border-bottom: 2px solid #ee4444;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 30px;
+}
+
+select {
+    font-size: 14px;
+    width: 271px;
+    margin-top: 5px;
+    padding: 5px 10px;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    background-color: rgb(250, 242, 242);
+}
+
+#submit-btn {
+    margin-top: 16px;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 10px 50px;
+    border: none;
+    border-radius: 8px;
+    background-color: rgba(239, 175, 175, 0.628);
+    transition: all .4s;
+}
+#submit-btn:hover {
+    cursor: pointer;
+    background-color: #ee4444;
+    color: white;
+}

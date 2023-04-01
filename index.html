@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- google icons -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="form-container">
+        <div class="left">
+          <div>
+            <img
+              src="images/logo.png"
+              alt=""
+              style="display: block; margin: 20px auto;"
+            />
+            <img
+              style="
+                display: block;
+                width: 19%;
+                position: absolute;
+                top: 51px;
+                left: 25px;
+              "
+              src="images/mongram.png"
+              alt=""
+            />
+          </div>
+
+          <div class="left-div-2">
+            <div>
+              <span class="material-symbols-outlined">
+                location_on
+              </span>
+              <p>
+                Address: Shahid Tajuddin Ahmed Sorony, Tejgaon Industrial Area,
+                Dhaka – 1208
+              </p>
+            </div>
+
+            <div>
+              <span class="material-symbols-outlined">
+                call
+              </span>
+              <p>
+                Phone : 02-58151880
+              </p>
+            </div>
+
+            <div>
+              <span class="material-symbols-outlined">
+                mail
+              </span>
+              <p>
+                E-mail : info@dpi.gov.bd, principal_dpi54@yahoo.com
+              </p>
+            </div>
+
+            <div>
+              <span class="material-symbols-outlined">
+                language
+              </span>
+              <p>
+                Website : www.dpi.gov.bd
+              </p>
+            </div>
+
+            <div>
+              <span class="material-symbols-outlined">
+                database
+              </span>
+              <form action="show-db.php" style="padding: 18px 0;">
+                <button
+                  type="submit"
+                  style="
+                    border: none;
+                    background-color: transparent;
+                    color: white;
+                    font-size: 0.9rem;
+                    font-weight: 500;
+                    font-style: italic;
+                    text-decoration: underline;
+                    font-family: 'Poppins' !important;
+                    cursor: pointer;
+                  "
+                >
+                  Student Details
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="right">
+          <h1 style="margin-bottom: 3px !important;">
+            Student Registration Form
+          </h1>
+
+          <!---------- Form  ------------>
+          <form action="submit-msg.php" method="post">
+            <div class="form-grid" style="margin-top: 0;">
+              <div>
+                <label for="fname"> First Name </label><br />
+                <input type="text" name="firstName" id="fname" />
+              </div>
+
+              <div>
+                <label for="lname"> Last Name </label><br />
+                <input type="text" name="lastName" id="lname" />
+              </div>
+            </div>
+
+            <div>
+              <label for="id-no"> Student Id No </label><br />
+              <input type="text" name="idNumber" id="id-no" maxlength="11" />
+            </div>
+
+            <div>
+              <label for="Email"> Email </label><br />
+              <input type="email" name="email" id="email" />
+            </div>
+
+            <div class="form-grid">
+              <div>
+                <label for="phone"> Mobile Number </label><br />
+                <input type="number" name="phone" id="phone" maxlength="11" />
+              </div>
+
+              <div>
+                <label for="dept"> Department </label><br />
+                <select name="dept" id="dept">
+                  <option value="Computer" selected>Computer Technology</option>
+                  <option value="Civil">Civil Technology</option>
+                  <option value="Electrical">Electrical Technology</option>
+                </select>
+              </div>
+            </div>
+
+            <div>
+              <input type="checkbox" name="" id="agreement" />
+              <label for="agreement"
+                >Keep me updated with daily notices and mailings.</label
+              >
+            </div>
+
+            <div>
+              <input type="submit" value="Submit" id="submit-btn" />
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
